@@ -68,45 +68,117 @@ get_header();
                 </div>
             </div>
             
+            
 	<!-- Blogs -->
+     <style>
+          .featurette-divider {
+    margin: 5rem 0;
+    /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 100;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+    </style>
+
 
 	<div class="blogs mt-4">
 		<div class="container ">
 			<div class="row">
 				<div class="col text-center">
 					<div class="section_title">
-						<h3>Tin tức</h3>
+						<h2>Tin tức mới nhất</h2>
 					</div>
 				</div>
 			</div>
-            <div class="row blogs_container">
-				<?php foreach($dataNews as $news):?>
-				<div class="col-lg-4 blog_item_col">
-					<div class="blog_item">
-						<div class="blog_background" style="background-image:url(assets/upload/news/<?php echo $news->photo; ?>)"></div>
-						<div class="blog_content d-flex flex-column align-items-center justify-content-center text-center">
-							<h5 class="blog_title"><?php echo $news->name;?></h5>
-							<span class="blog_meta">viết bởi: <?php echo $news->createdby?><br/>
-							Ngày <?php echo Date_format(Date_create($news->createdate), "d/m/Y");?></span>
-							<a class="blog_more" href="#">Xem chi tiết</a>
-						</div>
-					</div>
-				</div>
-				<?php endforeach;?>
-			</div>
-			
-			<div class="col-md-2 float-right p-2 mr- font-italic text-right font-weight-bold"><a class="blog_more " href="?mod=post">Xem thêm >>></a></div>
+            <div class="product-hot">
+	<div class="img-pro-hot wow fadeInRight" style="visibility: visible;">
+		<img src="thumbs/630x470x1/upload/photo/2-3120-7798.jpg" alt="AOC CQ32G3SE/74">
+	</div>
+	<div class="content-prohot wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+		<div class="wrap-ct-pr">
+			<div class="label-pro">Sản phẩm tiêu biểu</div>
+			<h2>AOC CQ32G3SE/74</h2>
+			<p>Màn hình cong Gaming AOC 31.5" với độ phân giải Quad HD (2560 x 1440), đem tới hình ảnh ấn tượng cùng tốc độ phản hồi 1ms, tần số quét 165Hz, công nghệ FreeSync Premium và HDR10. Được trang bị tấm nền VA, màn hình CQ32G3SE sẽ đem lại góc nhìn 178/178</p>
+			<div class="col-md-2 float-right p-2 mr- font-italic text-right font-weight-bold"><a class="blog_more " href="?mod=product&action=detail&product_id=6">Xem thêm >>></a></div>
 		</div>
 	</div>
+</div>
+</div>
+<div class="product-hot">
+	<div class="img-pro-hot wow fadeInRight" style="visibility: visible;">
+		<img src="thumbs/630x470x1/upload/photo/2-3120-7798.jpg" alt="AOC CQ32G3SE/74">
+	</div>
+    <div class="content-prohot wow fadeInledft" style="visibility:visible;animation-name:fadeInleft;">
+        <div class="wrap-ct-pr">
+            <div class="label-pro">Sản phầm mới nhất</div>
+            <h2>MÁY BỘ ROSA I12100</h2>
+            <p>Với 8gb Ram 3200MHz, va vi xử lý i3-12100 mạnh mẽ máy bạn đã đáp ứng nhu cầu văn phòng và khả năng giải trí với các tựa game như LMHT cùng một số game online khác.
+            <div class="col-md-2 float-right p-2 mr- font-italic text-right font-weight-bold"><a class="blog_more " href="?mod=product&action=detail&product_id=13">Xem thêm >>></a></div>
+
+            <!-- START THE FEATURETTES -->
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">CPU AMD RYZEN 9 7900X3D  <span class="text-muted"> 7900X3D</span></h2>
+                    <p class="lead"> Cải thiện hiệu suất một cách vượt trội và giúp giải phóng sức mạnh để tối đa hóa khả năng kết xuất và các công việc liên quan đến đồ họa..</p>
+                </div>
+                <div class="col-md-2 float-right p-2 mr- font-italic text-right font-weight-bold"><a class="blog_more " href="?mod=product&action=detail&product_id=29">Xem thêm >>> </a></div>
+                            
+                <div class="col-md-5">
+                    <img src= "public/images/img-pro-08.jpg">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">CPU-INTEL3-10105F-SRH8V<span class="text-muted">SRH79</span></h2>
+                    <p class="lead">CPU Intel Core i3-10105F là phiên bản nâng cấp của I3-10100F với xung nhịp tăng nhẹ...</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="public/images/img-pro-06.jpg">
+                </div>
+                <div class="col-md-2 float-right p-2 mr- font-italic text-right font-weight-bold"><a class="blog_more " href="?mod=product&action=detail&product_id=28">Xem thêm >>> </a></div>
+            </div>
+            <hr class="featurette-divider">
+        </div>
+        <style>
+      .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+body {
+    color: #5a5a5a;
+}
+        </style>
+
+            
+    
             <!-- product -->
     <div class="col-lg-7 text-right deal_ofthe_week_col">
 					<div class="deal_ofthe_week_content d-flex flex-column align-items-center">
 						<div class="section_title">
-							<h2>Khung giờ vàng</h2>
+							<h2>Khung sale giờ vàng</h2>
 						</div>
 						<ul class="timer">
 							<li class="d-inline-flex flex-column justify-content-center align-items-center">
-								<div id="day" class="timer_num">03</div>
+								<div id="day" class="timer_num">01</div>
 								<div class="timer_unit">Day</div>
 							</li>
 							<li class="d-inline-flex flex-column justify-content-center align-items-center">
@@ -122,7 +194,7 @@ get_header();
 								<div class="timer_unit">Sec</div>
 							</li>
 						</ul>
-						<div class="red_button deal_ofthe_week_button"><a href="index.php?controller=products&action=listsale">Mua ngay</a></div>
+						
 					</div>
 				</div>
             <style>
@@ -184,178 +256,48 @@ get_header();
     text-decoration: none;
     margin-top: 20px;
 }
+</style>
 
-            </style>
-            <div class="section" id="list-product-wp">
-                <div class="section-head">
-                    <h3 class="section-title">Máy tính xách tay</h3>
-                    <a href="/collections/all"><img src="admin/public/uploads/logo/on1.jpg"alt="Laptop" /></a>
+<script>
+    // Get references to the timer elements
+const dayElement = document.getElementById('day');
+const hourElement = document.getElementById('hour');
+const minuteElement = document.getElementById('minute');
+const secondElement   
+ = document.getElementById('second');   
 
-                    </div>
-                <?php
-                if (!empty($list_product)) {
-                ?>
-                    <div class="section-detail">
-                        <ul class="list-item clearfix">
-                            <?php
-                            foreach ($list_product as $item) {
-                                if ($item['cat_id'] == 1 || $item['parent_id'] == 1) {
-                            ?>
-                                    <li>
-                                        <a href="?mod=product&action=detail&product_id=<?php echo $item['product_id']; ?>" title="" class="thumb">
-                                            <img style="max-height:auto" src="admin/<?php echo $item['product_thumb']; ?>">
-                                        </a>
-                                        <a href="?mod=product&action=detail&product_id=<?php echo $item['product_id']; ?>" title="" class="product-name"><?php echo $item['product_name']; ?></a>
-                                        <div class="price">
-                                            <span class="new">
-                                                <?php if (empty($item['price_sale'])) {
-                                                    echo currency_format($item['original_price']);
-                                                } else {
-                                                    echo currency_format($item['price_sale']);
-                                                }
-                                                ?>
-                                            </span>
-                                            <span class="old"><?php echo currency_format($item['original_price']); ?></span>
-                                        </div>
-                                        <div class="action clearfix">
-                                            <div style="text-align: center; ">
-                                                <a href="?mod=cart&action=add&product_id=<?php echo $item['product_id']; ?>" title="Liên hệ" class="add-cart">Liên hệ</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                            <?php }
-                            } ?>
-                        </ul>
-                    </div>
-                <?php  } ?>
-            </div>
-            <div class="section" id="list-product-wp">
-                <div class="section-head clearfix">
-                <h3 class="section-title">AI</h3>
-                <a href="/collections/all"><img src="admin/public/uploads/logo/ai.jpg"alt="ai" /></a>
-                </div>
-                <?php if (!empty($list_product)) { ?>
-                    <div class="section-detail">
-                        <ul class="list-item clearfix">
-                            <?php
-                            foreach ($list_product as $item) {
-                                if ($item['cat_id'] == 20 || $item['parent_id'] == 3) {
-                            ?>
-                                    <li>
-                                        <a href="?mod=product&action=detail&product_id=<?php echo $item['product_id']; ?>" title="" class="thumb">
-                                            <img style="max-height:auto" src="admin/<?php echo $item['product_thumb']; ?>">
-                                        </a>
-                                        <a href="?mod=product&action=detail&product_id=<?php echo $item['product_id']; ?>" title="" class="product-name"><?php echo $item['product_name']; ?></a>
-                                        <div class="price">
-                                            <span class="new">
-                                                <?php if (empty($item['price_sale'])) {
-                                                    echo currency_format($item['original_price']);
-                                                } else {
-                                                    echo currency_format($item['price_sale']);
-                                                }
-                                                ?>
-                                            </span>
-                                            <span class="old"><?php echo currency_format($item['original_price']); ?></span>
-                                        </div>
-                                        <div class="action clearfix">
-                                            <div style="text-align: center">
-                                                <a href="?mod=cart&action=add&product_id=<?php echo $item['product_id']; ?>" title="Liên hệ"  class="add-cart" >Liên hệ</a>
-                                            </div>
-                                           
-                                        </div>
-                                    </li>
-                            <?php }
-                            } ?>
-                        </ul>
-                    </div>
-                <?php } ?>
-            </div>
-            <div class="section" id="list-product-wp">
-                <div class="section-head clearfix">
-                    <h3 class="section-title fl-left">Gaming</h3>
-                    <a href="/collections/all"><img src="admin/public/uploads/logo/on2.jpg" alt="Recommend Gaming Gears" /></a>
-                    </div>
-                <?php if (!empty($list_product)) { ?>
-                    <div class="section-detail">
-                        <ul class="list-item clearfix">
-                            <?php
-                            foreach ($list_product as $item) {
-                                if ($item['cat_id'] == 12) {
-                            ?>
-                                    <li>
-                                        <a href="?mod=product&action=detail&product_id=<?php echo $item['product_id']; ?>" title="" class="thumb">
-                                            <img style="max-height:auto" src="admin/<?php echo $item['product_thumb']; ?>">
-                                        </a>
-                                        <a href="?mod=product&action=detail&product_id=<?php echo $item['product_id']; ?>" title="" class="product-name"><?php echo $item['product_name']; ?></a>
-                                        <div class="price">
-                                            <span class="new">
-                                                <?php if (empty($item['price_sale'])) {
-                                                    echo currency_format($item['original_price']);
-                                                } else {
-                                                    echo currency_format($item['price_sale']);
-                                                }
-                                                ?>
-                                            </span>
-                                            <span class="old"><?php echo currency_format($item['original_price']); ?></span>
-                                        </div>
-                                        <div class="action clearfix">
-                                            <div style="text-align: center; ">
-                                                <a href="?mod=cart&action=add&product_id=<?php echo $item['product_id']; ?>" title="Liên hệ" class="add-cart">Liên hệ</a>
-                                            </div>
-                                            
-                                        </div>
-                                    </li>
-                            <?php }
-                            } ?>
-                        </ul>
-                    </div>
-                <?php } ?>
-            </div>
-            <div class="section" id="list-product-wp">
-                <div class="section-head clearfix">
-                    <h3 class="section-title fl-left">Linh kiện máy tính</h3>
-                    <a href="/collections/all"><img src="admin/public/uploads/logo/on3.jpg" alt="Linh kiện máy tính" /></a>
-                </div>
-                <?php if (!empty($list_product)) { ?>
-                    <div class="section-detail">
-                        <ul class="list-item clearfix">
-                            <?php
-                            foreach ($list_product as $item) {
-                                if ($item['cat_id'] == 15 || $item['parent_id'] == 14) {
-                            ?>
-                                    <li>
-                                        <a href="?mod=product&action=detail&product_id=<?php echo $item['product_id']; ?>" title="" class="thumb">
-                                            <img style="max-height:auto" src="admin/<?php echo $item['product_thumb']; ?>">
-                                        </a>
-                                        <a href="?mod=product&action=detail&product_id=<?php echo $item['product_id']; ?>" title="" class="product-name"><?php echo $item['product_name']; ?></a>
-                                        <div class="price">
-                                            <span class="new">
-                                                <?php if (empty($item['price_sale'])) {
-                                                    echo currency_format($item['original_price']);
-                                                } else {
-                                                    echo currency_format($item['price_sale']);
-                                                }
-                                                ?>
-                                            </span>
-                                            <span class="old"><?php echo currency_format($item['original_price']); ?></span>
-                                        </div>
-                                        <div class="action clearfix">
-                                            <div style="text-align: center; ">
-                                                <a href="?mod=cart&action=add&product_id=<?php echo $item['product_id']; ?>" title="Liên hệ" class="add-cart">Liên hệ</a>
-                                            </div>
-                                            <!-- <a href="?mod=product&action=detail&product_id=<?php echo $item['product_id']; ?>" title="Mua ngay" class="buy-now fl-right">Mua ngay</a> -->
-                                        </div>
-                                    </li>
-                            <?php }
-                            } ?>
-                        </ul>
-                    </div>
-                <?php } ?>
-            </div>
-        </div>
-        <?php get_sidebar() ?>
-    </div>
-</div>
+
+// Set the target date and time (adjust as needed)
+const targetDate = new Date('2024-09-01T23:59:59'); // Replace with your desired target date and time
+
+// Function to update the timer display
+function updateTimer() {
+  const now = new Date();
+  const timeDiff = targetDate - now;
+
+  // Calculate days, hours, minutes, and seconds
+  const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes   
+ = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);   
+
+
+  // Update the timer elements
+  dayElement.textContent = days;
+  hourElement.textContent = hours;
+  minuteElement.textContent = minutes;
+  secondElement.textContent = seconds;
+}
+
+// Initial update
+updateTimer();
+
+// Update the timer every second
+setInterval(updateTimer, 1000);
+</script>
+     
+          
 <?php
 get_footer();
 ?>
